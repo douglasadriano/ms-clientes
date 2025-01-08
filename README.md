@@ -5,6 +5,9 @@ Esta API permite o gerenciamento de clientes em um sistema, oferecendo operaçõ
 ## Tecnologias Utilizadas
 
 - Java 17
+- JDK: kit de desenvolvimento Java que fornece ferramentas, bibliotecas e o compilador necessários para desenvolver, compilar e executar aplicações Java.
+- MAVEN: ferramenta de automação de build e gerenciamento de dependências para projetos Java.
+- JDBC: API do Java para conectar, interagir e manipular bancos de dados relacionais.
 - Spring Boot: Framework para desenvolvimento de aplicações Java.
 - Spring Security: Implementação de autenticação básica.
 - JPA/Hibernate: Para persistência de dados no banco de dados.
@@ -44,7 +47,9 @@ mvn clean install
 ```bash
 mvn spring-boot:run
 ```
-Agora a API estará disponível em http://localhost:8080.
+Agora a API estará disponível em http://localhost:8080/h2-console.
+- **USER**: `sa`
+- **PASSWORD**: `password`
 
 ## Endpoints
 
@@ -67,7 +72,7 @@ Agora a API estará disponível em http://localhost:8080.
   "id": 1,
   "nome": "João da Silva",
   "email": "joao.silva@exemplo.com",
-  "telefone": "1234567890"
+  "telefone": "(12) 3456-7890"
 }
 ```
 ### 2. Atualizar Cliente
@@ -88,7 +93,7 @@ Agora a API estará disponível em http://localhost:8080.
   "id": 1,
   "nome": "João da Silva",
   "email": "joao.silva@novoemail.com",
-  "telefone": "0987654321"
+  "telefone": "(09) 8765-4321"
 }
 ```
 ### 3. Excluir Cliente
