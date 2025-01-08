@@ -4,15 +4,16 @@ Esta API permite o gerenciamento de clientes em um sistema, oferecendo operaçõ
 
 ## Tecnologias Utilizadas
 
-- Java 17
-- JDK: kit de desenvolvimento Java que fornece ferramentas, bibliotecas e o compilador necessários para desenvolver, compilar e executar aplicações Java.
-- MAVEN: ferramenta de automação de build e gerenciamento de dependências para projetos Java.
-- JDBC: API do Java para conectar, interagir e manipular bancos de dados relacionais.
-- Spring Boot: Framework para desenvolvimento de aplicações Java.
-- Spring Security: Implementação de autenticação básica.
-- JPA/Hibernate: Para persistência de dados no banco de dados.
-- H2: Banco de dados em memória para fins de teste.
-- SLF4J: Framework de logging para a aplicação.
+- **Java 17**
+- **JDK:** Kit de desenvolvimento Java que fornece ferramentas, bibliotecas e o compilador necessários para desenvolver, compilar e executar aplicações Java.
+- **MAVEN:** Ferramenta de automação de build e gerenciamento de dependências para projetos Java.
+- **JDBC:** API do Java para conectar, interagir e manipular bancos de dados relacionais.
+- **Spring Boot:** Framework para desenvolvimento de aplicações Java.
+- **Spring Security:** Implementação de autenticação básica.
+- **JPA/Hibernate:** Para persistência de dados no banco de dados.
+- **H2:** Banco de dados em memória para fins de teste.
+- **SLF4J:** Framework de logging para a aplicação.
+- **POSTMAN:** Ferramenta para testar e documentar APIs.
 
 ## Funcionalidades
 
@@ -29,7 +30,7 @@ Antes de rodar a API, você precisa ter as seguintes ferramentas instaladas:
 
 - **Java 17 ou superior**
 - **Maven**
-- **Postman (opcional)**
+- **Postman**
 
 ## Instalação
 Clone este repositório na sua IDE e rode a aplicação localmente com os seguintes passos:
