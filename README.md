@@ -32,7 +32,7 @@ Antes de rodar a API, você precisa ter as seguintes ferramentas instaladas:
 - **Postman (opcional)**
 
 ## Instalação
-Clone este repositório e rode a aplicação localmente com os seguintes passos:
+Clone este repositório na sua IDE e rode a aplicação localmente com os seguintes passos:
 
 ### Passo 1: Clone o repositório
 ```bash
@@ -47,7 +47,7 @@ mvn clean install
 ```bash
 mvn spring-boot:run
 ```
-Agora a API estará disponível em http://localhost:8080/h2-console.
+Agora o banco de dados da API estará disponível em http://localhost:8080/h2-console.
 - **USER**: `sa`
 - **PASSWORD**: `password`
 
@@ -155,6 +155,15 @@ Autenticação: A API utiliza autenticação básica (Basic Auth). Para testar, 
   "telefone": "9876543210"
 }
 ```
+#### Resposta:
+```json
+{
+  "id": 1,
+  "nome": "Carlos Almeida",
+  "email": "carlos.almeida@exemplo.com",
+  "telefone": "(98) 7654-3210"
+}
+```
 
 ### 2. Atualizar Cliente
 - **Método**: `PUT`
@@ -167,17 +176,58 @@ Autenticação: A API utiliza autenticação básica (Basic Auth). Para testar, 
   "telefone": "01123456789"
 }
 ```
+#### Resposta:
+```json
+{
+  "id": 1,
+  "nome": "Carlos Almeida",
+  "email": "carlos.almeida@novoemail.com",
+  "telefone": "(01) 12345-6789"
+}
+```
 ### 3. Excluir Cliente
 - **Método**: `DELETE`
 - **URL**: http://localhost:8080/api/clientes/{id}
+#### Resposta:
+```json
+Cliente excluído com sucesso.
+```
 
 ### 4. Listar Todos os Clientes
 - **Método**: `GET`
 - **URL**: http://localhost:8080/api/clientes
 
+#### Resposta:
+```json
+[
+  {
+    "id": 2,
+    "nome": "Carlos Almeida",
+    "email": "joao.silva@exemplo.com",
+    "telefone": "(12) 3456-7890"
+  },
+  {
+    "id": 3,
+    "nome": "João da Silva",
+    "email": "joao.silva@exemplo.com",
+    "telefone": "(12) 3456-7890"
+  }
+]
+```
+
 ### 5. Buscar Cliente por ID
 - **Método**: `GET`
 - **URL**: http://localhost:8080/api/clientes/{id}
+
+#### Resposta:
+```json
+  {
+    "id": 2,
+    "nome": "Carlos Almeida",
+    "email": "joao.silva@exemplo.com",
+    "telefone": "(12) 3456-7890"
+  }
+```
 
 ## Contribuição
 Se você deseja contribuir para este projeto, siga os passos abaixo:
